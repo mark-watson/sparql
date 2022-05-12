@@ -1,5 +1,9 @@
 # Simple portable SPARQL clients
 
+From my book URI: https://leanpub.com/lovinglisp
+
+Clone this repo into ~/quicklisp/local-projects
+
 There are comments at the bottom of sparql.lisp with example queries.
 
 ## Setting up Apache Jena Fuseki SPARQL endpoint for Development
