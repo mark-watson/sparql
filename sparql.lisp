@@ -99,18 +99,12 @@
 			(drakma:url-encode query :utf-8)
 			"&format=json"))
 	     :output :string)))
-      (print (list
-              "curl" 
-              (concatenate 'string
-                        uri
-			(drakma:url-encode query :utf-8)
-			"&format=json")))
-      (print response)
       (with-input-from-string
           (s response)
 	(let* ((json-as-list (json:decode-json s))
-	       (var-names (mapcar #'intern (cdar json-as-list)))
+	       (var-names (cdar json-as-list))
 	       (values (cdadr json-as-list)))
+	  (print (list "var-names:" var-names "\n"))
 	  (mapcar #'(lambda (x) (mapcar #'list var-names x)) values)))))
 
 
