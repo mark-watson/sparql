@@ -1,4 +1,4 @@
-# Simple portable SPARQL clients
+# Common Lisp portable SPARQL clients
 
 From my book URI: https://leanpub.com/lovinglisp
 

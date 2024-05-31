@@ -1,4 +1,4 @@
-;; Compyright 2021-2022 Mark Watson All Rights Reserved.
+;; Copyright 2021-2022 Mark Watson All Rights Reserved.
 ;; License: Apache 2
 
 (in-package #:sparql)
@@ -143,9 +143,9 @@
   (let* ((response
            (myutils:replace-all
             (myutils:replace-all
-             (uiop:run-program 
+             (uiop:run-program
               (list
-               "curl" 
+               "curl"
                (concatenate 'string
                             "https://dbpedia.org/sparql?query="
                             (drakma:url-encode query :utf-8)
